@@ -1,3 +1,15 @@
+---
+title: ClimateGAN
+emoji: 🌎
+colorFrom: blue
+colorTo: green
+sdk: gradio
+sdk_version: 2.9.4
+app_file: app.py
+pinned: false
+license: gpl-3.0
+---
+
 # ClimateGAN: Raising Awareness about Climate Change by Generating Images of Floods
 
 This repository contains the code used to train the model presented in our **[paper](https://arxiv.org/abs/2110.02871)**.
