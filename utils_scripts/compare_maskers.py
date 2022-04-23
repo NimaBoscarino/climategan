@@ -290,7 +290,7 @@ if __name__ == "__main__":
     if ground_model is None:
         raise ValueError("Could not find a non-ground model to get a painter")
 
-    device = torch.device("cuda:0")
+    device = torch.device("cpu")
     torch.set_grad_enabled(False)
 
     xs, ys, im_paths, lab_paths = load_images_and_labels()

@@ -381,7 +381,7 @@ class OmniGenerator(nn.Module):
                 val_painter_opts = Dict(yaml.safe_load(f))
 
             # load checkpoint
-            state_dict = torch.load(ckpt_path)
+            state_dict = torch.load(ckpt_path, map_location=torch.device('cpu'))
 
             # create dummy painter from loaded opts
             painter = create_painter(val_painter_opts)

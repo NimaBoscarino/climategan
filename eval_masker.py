@@ -365,7 +365,7 @@ def get_inferences(
     masks : list
         A list of (H, W) predicted masks
     """
-    device = torch.device("cuda:0")
+    device = torch.device("cpu")
     torch.set_grad_enabled(False)
     to_tensor = ToTensor()
 

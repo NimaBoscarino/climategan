@@ -917,7 +917,7 @@ def all_texts_to_array(texts, width=640, height=40):
 
 
 class Timer:
-    def __init__(self, name="", store=None, precision=3, ignore=False, cuda=True):
+    def __init__(self, name="", store=None, precision=3, ignore=False, cuda=False):
         self.name = name
         self.store = store
         self.precision = precision
